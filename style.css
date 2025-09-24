@@ -119,25 +119,26 @@ body {
 input { 
   width:200px;
   height:25px;
-  border-width: 3px;
+  border-width: 5px;
   font-size: 20px;
   border-color: #E5E7EB;
 
   font-family:sans-serif;
 }
 
+input[type='password']:invalid:focus {
+  border-color: red;
+}
+
 input:focus {
   border-color:blue;
 }
 
-input[type='password']:invalid {
-  border-color: red;
-}
-
+/*
 input[type='password']:invalid:not(:focus) {
   border-color:initial;
 }
-
+*/
 #right-bottom {
   flex:4;
   background-color: #dbdbdb;
