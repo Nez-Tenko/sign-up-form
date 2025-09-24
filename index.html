@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+  </head>
+
+  <body>
+    <div id="left-side"> <!--Left side of webpage-->
+    
+      <div id='odin-logo-div'>
+        <img src='images/odin-lined-logo.png' width='95' height='127' id='logo-icon'>
+        <p id='logo-text'>ODIN</p>
+      </div>
+
+      <div id='image-credit'>
+        Photo by <u>Halie West</u> on <u>Unsplash</u>
+      </div>
+    </div>
+
+    <div id="right-side"> <!--Right side of webpage, will have form -->
+      <div id="right-top">
+        <p>
+          This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <em>now</em> to get sratred.
+
+          <br><br>You <em>know</em> you want to.<br> 
+        </p>
+      </div>
+
+      <div id="right-middle">
+        <p id="form-paragraph">Let's do this!</p>
+        
+        <!--<form class='main-form' action="*" method="get">-->
+        <form class='main-form' method="get">
+
+          
+          <div class='row-div'>
+            <div class='input-div'>
+              <label for="first_name" class="label-font">FIRST NAME</label>
+              <input type="text" name='fname' id="first_name" required>
+            </div>
+            <div class='input-div'>
+              <label for='last_name' class="label-font">LAST NAME</label>
+              <input type="text" name='lname' id='last_name' required>
+            </div>
+          </div>
+
+          <div class='row-div'>
+            <div class='input-div'>
+              <label for='email' class="label-font">EMAIL</label>
+              <input type='email' name='email' id='user_email' required>
+            </div>
+            <div class='input-div'>
+              <label for='phone-num' class="label-font">PHONE NUMBER</label>
+              <input type='tel' name='phone_num' id='user_phone_number'> <!-- The telphone number is the only optional field-->
+            </div>
+          </div>
+
+          <div class='row-div'>
+            <div class='input-div'>
+              <label for='password' class="label-font">PASSWORD</label>
+              <input type='password' name='pass' id='user-password' required minlenth=8 pattern="(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%&?']).*">
+            </div>
+            <div class='input-div'>
+              <label for='confirm-password' class="label-font">CONFIRM PASSWORD</label>
+              <input type='password' name='pass_confirm' id='user-confirm-password' required minlength=8 pattern="(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%&?']).*">
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div id="right-bottom">
+        <button type="submit" form='main-form' id="create-account-button">Create Account</button>
+        <div id='already-have-account-div'>
+          <p id='already-have-account-text'>Already have an account? <a href='url' id='login-link'>Log in</a></p> 
+          <!--<button type='button' id='login-button'>Log in</button>-->
+        </div>
+      </div>
+    </div>
+
+    <script src='javascript.js'>
+      console.log("Password must be at least 8 characters long, have at least 1 number, 1 letter, and 1 special character");
+    </script>
+  </body>
+</html>
