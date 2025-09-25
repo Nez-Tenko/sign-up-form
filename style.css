@@ -133,10 +133,12 @@ input {
 }*/
 
 input:focus:not([type='password']) {
+  outline:none;
   border-color:blue;
 }
 
 input[type='password']:invalid:focus {
+  outline:none;
   border-color: red;
 }
 
